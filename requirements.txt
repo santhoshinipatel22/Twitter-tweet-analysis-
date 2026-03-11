@@ -1,0 +1,8 @@
+flask
+pandas
+tweepy
+textblob
+wordcloud
+matplotlib
+nltk
+python-dotenv

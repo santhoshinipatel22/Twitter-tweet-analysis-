@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Twitter Sentiment Analysis</title>
+    <link rel="stylesheet" href="/static/css/style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Twitter Sentiment Analysis</h1>
+        <form id="search-form">
+            <input type="text" name="keyword" placeholder="Keyword or hashtag" required />
+            <input type="text" name="location" placeholder="Location (city, country)" />
+            <input type="date" name="start_date" />
+            <input type="date" name="end_date" />
+            <button type="submit">Analyze</button>
+        </form>
+        <div id="results">
+            <h3>Results</h3>
+            <p id="total"></p>
+            <canvas id="sentimentChart"></canvas>
+            <canvas id="trendChart" style="margin-top:20px;"></canvas>
+            <div id="wordcloud"></div>
+        </div>
+    </div>
+    <script src="/static/js/script.js"></script>
+</body>
+</html>
